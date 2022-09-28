@@ -41,7 +41,7 @@ public class App {
 
     //todo Task 4
     public void addTwoNumbers(){
-        Scanner sc = new Scanner(System.in);  // Create a Scanner object
+        Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int y = sc.nextInt();
         int sum = Integer.sum(x, y);
@@ -50,7 +50,7 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        Scanner sc = new Scanner(System.in);  // Create a Scanner object
+        Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int y = sc.nextInt();
         System.out.println("Before Swap:");
@@ -67,12 +67,47 @@ public class App {
 
     //todo Task 6
     public void compareTwoNumbers(){
-        // input your solution here
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+
+        if (n1 > n2){
+            System.out.println("n1 > n2");
+        }
+        if (n2 > n1){
+            System.out.println("n1: " + n1 + System.lineSeparator() + "n2: " + n2 + System.lineSeparator() + "n2 > n1");
+        }
+        if (n1 == n2){
+            System.out.println("n2 == n1");
+        } else {
+            return;
+        }
     }
 
     //todo Task 7
     public void ratingSalesPerson(){
-        // input your solution here
+        Scanner sc = new Scanner(System.in);
+        int revenue = Integer.parseInt(sc.nextLine());
+        System.out.println("Enter annual Revenue: " + revenue);
+
+        if (revenue >= 100000){
+            System.out.println("Invalid Revenue");
+        }
+        if (revenue < 0){
+            System.out.println("Invalid Revenue");
+        }
+        if (revenue >= 0 && revenue < 20000){
+            System.out.println("Poor Sales Revenue");
+        }
+        if (revenue >= 20000 && revenue < 50000){
+            System.out.println("Average Sales Revenue");
+        }
+        if (revenue >= 50000 && revenue < 80000){
+            System.out.println("Good Sales Revenue");
+        }
+        if (revenue >= 80000 && revenue < 100000){
+            System.out.println("Excellent Sales Revenue");
+        }
     }
 
     //todo Task 8
