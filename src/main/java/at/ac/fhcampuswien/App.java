@@ -50,7 +50,19 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+        Scanner sc = new Scanner(System.in);  // Create a Scanner object
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        System.out.println("Before Swap:");
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+
+        x = x + y;
+        y = x - y;
+        x = x - y;
+        System.out.println("After Swap:");
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
     }
 
     //todo Task 6
