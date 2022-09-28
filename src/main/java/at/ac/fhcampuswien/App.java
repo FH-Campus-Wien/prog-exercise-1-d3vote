@@ -6,17 +6,37 @@ public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
-        // input your solution here
+        System.out.println("Hello World!");
     }
 
     //todo Task 2
     public void helloRobot(){
-        // input your solution here
+        System.out.println("0123456789012345678901" + System.lineSeparator() +
+                "         __" + System.lineSeparator() +
+                " _(\\    |@@|" + System.lineSeparator() +
+                "(__/\\__ \\--/ __" + System.lineSeparator() +
+                "   \\___|----|  |   __" + System.lineSeparator() +
+                "       \\ }{ /\\ )_ / _\\" + System.lineSeparator() +
+                "       /\\__/\\ \\__O (__" + System.lineSeparator() +
+                "      (--/\\--)    \\__/" + System.lineSeparator() +
+                "      _)(  )(_" + System.lineSeparator() +
+                "     `---''---`");
+
     }
 
     //todo Task 3
     public void sumOfLiterals(){
-        // input your solution here
+        int sum;
+        char num1 = (int) 'Z';
+        int num2 = 0xFace;
+        int num3 = 012;
+        long num4 = (int) 80L;
+        float num5 = (int) 44e-1f;
+        float num6 = (int) 5.5f;
+        double num7 = (int) 8.88e1;
+        double num8 = (int) 99.9;
+        sum = (int) (num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8);
+        System.out.println(sum);
     }
 
     //todo Task 4
