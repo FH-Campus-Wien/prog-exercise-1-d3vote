@@ -6,7 +6,6 @@ public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
-
         System.out.println("Hello World!");
     }
 
@@ -42,8 +41,12 @@ public class App {
 
     //todo Task 4
     public void addTwoNumbers(){
-        // input your solution here
-    }
+        Scanner sc = new Scanner(System.in);  // Create a Scanner object
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int sum = Integer.sum(x, y);
+        System.out.println(sum);
+  }
 
     //todo Task 5
     public void swapTwoNumbers(){
