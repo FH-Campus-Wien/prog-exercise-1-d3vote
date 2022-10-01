@@ -51,18 +51,18 @@ public class App {
     //todo Task 5
     public void swapTwoNumbers(){
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int y = sc.nextInt();
         System.out.println("Before Swap:");
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
+        System.out.println("x: ");
+        int x = sc.nextInt();
+        System.out.println("y: ");
+        int y = sc.nextInt();
 
+        System.out.println("After Swap:");
         x = x + y;
         y = x - y;
         x = x - y;
-        System.out.println("After Swap:");
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
     }
 
     //todo Task 6
