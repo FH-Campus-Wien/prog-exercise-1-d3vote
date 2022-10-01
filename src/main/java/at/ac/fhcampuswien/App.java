@@ -44,17 +44,18 @@ public class App {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int y = sc.nextInt();
-        int sum = Integer.sum(x, y);
+        int sum = x+y;
         System.out.println(sum);
   }
 
     //todo Task 5
     public void swapTwoNumbers(){
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Before Swap:");
-        System.out.println("x: ");
+        System.out.print("x: ");
         int x = sc.nextInt();
-        System.out.println("y: ");
+        System.out.print("y: ");
         int y = sc.nextInt();
 
         System.out.println("After Swap:");
@@ -72,13 +73,13 @@ public class App {
         int n2 = sc.nextInt();
 
         if (n1 > n2){
-            System.out.println("n1 > n2");
+            System.out.println("n1: " + "n2: " + "n1 > n2");
         }
         if (n2 > n1){
-            System.out.println("n1: " + n1 + System.lineSeparator() + "n2: " + n2 + System.lineSeparator() + "n2 > n1");
+            System.out.println("n1: " + "n2: " + "n2 > n1");
         }
         if (n1 == n2){
-            System.out.println("n2 == n1");
+            System.out.println("n1: " + "n2: " + "n1 == n2");
         } else {
             return;
         }
@@ -88,7 +89,7 @@ public class App {
     public void ratingSalesPerson(){
         Scanner sc = new Scanner(System.in);
         int revenue = Integer.parseInt(sc.nextLine());
-        System.out.println("Enter annual Revenue: " + revenue);
+        System.out.print("Enter annual Revenue: ");
 
         if (revenue >= 100000){
             System.out.println("Invalid Revenue");
