@@ -93,32 +93,59 @@ public class App {
 
         if (revenue >= 100000){
             System.out.println("Invalid Revenue");
-        }
-        if (revenue < 0){
+        } else if (revenue < 0){
             System.out.println("Invalid Revenue");
-        }
-        if (revenue >= 0 && revenue < 20000){
+        } else if (revenue >= 0 && revenue < 20000){
             System.out.println("Poor Sales Revenue");
-        }
-        if (revenue >= 20000 && revenue < 50000){
+        } else if (revenue >= 20000 && revenue < 50000){
             System.out.println("Average Sales Revenue");
-        }
-        if (revenue >= 50000 && revenue < 80000){
+        } else if (revenue >= 50000 && revenue < 80000){
             System.out.println("Good Sales Revenue");
-        }
-        if (revenue >= 80000 && revenue < 100000){
+        } else if (revenue >= 80000 && revenue < 100000){
             System.out.println("Excellent Sales Revenue");
         }
     }
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter CommissionClass: ");
+        int x = sc.nextInt();
+        double y;
+
+        switch (x){
+            case 1:
+                y = 0.01;
+                break;
+            case 2:
+                y = 0.02;
+                break;
+            case 3:
+                y = 0.03;
+                break;
+            case 4:
+                y = 0.04;
+                break;
+            default:
+                y = 0.00;
+                break;
+        }
+        System.out.println("Your Commission Rate was set to " + y);
     }
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Year: ");
+        double x = sc.nextInt();
+
+        if (x % 4 == 0 && x % 100 != 0 || x % 400 == 0)
+        {
+            System.out.println("Leapyear");
+        } else
+        {
+            System.out.println("Not a Leapyear");
+        }
     }
 
     //todo Task 10
