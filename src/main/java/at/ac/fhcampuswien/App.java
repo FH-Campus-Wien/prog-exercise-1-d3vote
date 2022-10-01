@@ -150,7 +150,17 @@ public class App {
 
     //todo Task 10
     public void transposedNumbers(){
-        // input your solution here
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Number: ");
+        int x = sc.nextInt();
+        int y = 0;
+        while(x != 0)
+        {
+            int z = x % 10;
+            y = y * 10 + z;
+            x = x/10;
+        }
+        System.out.println(y);
     }
 
 
